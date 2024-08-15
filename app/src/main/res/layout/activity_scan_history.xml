@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmn"
+    tools:context="C241.PS470.Bangkit.bigcall.ScanHistory">
+
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="283dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/cylinder"
+        android:gravity="center"
+        android:text="@string/judulCalca"
+        android:textColor="@color/orange"
+        android:textSize="17sp"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/ScScanHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/main_canvas"
+        app:layout_constraintBottom_toTopOf="@+id/TextBoxKeterangan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="119dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/kembaliBtn"
+        android:textSize="14sp"
+        android:onClick="kembali"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScScanHistory"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TextBoxKeterangan"
+        android:layout_width="140dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/main_canvas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ScScanHistory"
+        app:layout_constraintTop_toBottomOf="@+id/ScScanHistory">
+
+
+        <TextView
+            android:id="@+id/Keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="13dp"
+            android:text="Keterangan"
+            app:layout_constraintBottom_toTopOf="@+id/jmlKalKonsumsi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/boxRed"
+            android:layout_width="19dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/red"
+            app:layout_constraintBottom_toBottomOf="@+id/jmlKalKonsumsi"
+            app:layout_constraintEnd_toStartOf="@+id/jmlKalKonsumsi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/jmlKalKonsumsi" />
+
+        <ImageView
+            android:id="@+id/boxBrown"
+            android:layout_width="19dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/brown"
+            app:layout_constraintBottom_toBottomOf="@+id/jmlKalButuh"
+            app:layout_constraintEnd_toEndOf="@+id/boxRed"
+            app:layout_constraintStart_toStartOf="@+id/boxRed"
+            app:layout_constraintTop_toBottomOf="@+id/jmlKalKonsumsi" />
+
+        <TextView
+            android:id="@+id/jmlKalKonsumsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:text="@string/jmlKalKonsumsi"
+            android:textSize="7sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/Keterangan"
+            app:layout_constraintTop_toBottomOf="@+id/Keterangan" />
+
+        <TextView
+            android:id="@+id/jmlKalButuh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/jmlKalButuh"
+            android:textSize="7sp"
+            app:layout_constraintEnd_toEndOf="@+id/jmlKalKonsumsi"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/jmlKalKonsumsi"
+            app:layout_constraintTop_toBottomOf="@+id/jmlKalKonsumsi" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

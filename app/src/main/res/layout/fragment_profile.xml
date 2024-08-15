@@ -1,0 +1,181 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="C241.PS470.Bangkit.bigcall.profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="309dp"
+            android:layout_height="531dp"
+            android:background="@color/white"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="3dp">
+
+            <ImageButton
+                android:id="@+id/profilePicture"
+                android:layout_width="107dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/profile_img"
+                android:onClick="profilePP"
+                android:src="@drawable/pc_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="@string/username"
+                android:textColor="@color/blue"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="135dp"
+                android:layout_height="189dp"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/profilePicture"
+                tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:id="@+id/txtNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/editNama"
+                    android:textColor="@color/lightBlue" />
+
+                <EditText
+                    android:id="@+id/fleditdNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightBlue"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/txTinggiBadan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/editTB"
+                    android:textColor="@color/lightBlue" />
+
+                <EditText
+                    android:id="@+id/fldEditTB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightBlue"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/txtUbahPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/editTB"
+                    android:textColor="@color/lightBlue" />
+
+                <EditText
+                    android:id="@+id/fldUbahPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightBlue"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="173dp"
+                android:layout_height="191dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/txtTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/editTanggal"
+                    android:textColor="@color/lightBlue" />
+
+                <EditText
+                    android:id="@+id/fldTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightBlue"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/txtBB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/editBB"
+                    android:textColor="@color/lightBlue" />
+
+                <EditText
+                    android:id="@+id/fldEditBB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightBlue"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/txtJenisKelamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/editKelamin"
+                    android:textColor="@color/lightBlue" />
+
+                <EditText
+                    android:id="@+id/fldEditKelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightBlue"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="106dp"
+                android:layout_height="48dp"
+                android:background="@color/orange"
+                android:text="@string/simpanBtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnLogOut"
+                app:layout_constraintHorizontal_bias="0.381"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.23" />
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="106dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="60dp"
+                android:background="@color/orange"
+                android:text="@string/logOutbtn"
+                app:layout_constraintBottom_toBottomOf="@+id/btnSimpan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnSimpan"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

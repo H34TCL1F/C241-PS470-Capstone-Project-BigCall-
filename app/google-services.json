@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1065275506926",
+    "project_id": "bigcall-5bee5",
+    "storage_bucket": "bigcall-5bee5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065275506926:android:0d383f6bde536fef7773ff",
+        "android_client_info": {
+          "package_name": "c241.ps470.bangkit.bigcall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTCCa_O2334mJTuAyP1XaEAjSXjWlha4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

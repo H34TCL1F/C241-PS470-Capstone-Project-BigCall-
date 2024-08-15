@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglr"
+    tools:context=".activityRegister">
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="23dp"
+        android:text="REGISTER"
+        android:textAllCaps="true"
+        android:textColor="@color/blue"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <ScrollView
+        android:id="@+id/view"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="182dp"
+        android:background="@drawable/register_canvas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegister"
+        app:layout_editor_absoluteY="110dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/profilePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="120dp"
+                android:background="@drawable/profile_img"
+                android:src="@drawable/pc_profile" />
+
+            <EditText
+                android:id="@+id/fldEditNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:hint="@string/editNama"
+                android:textColorHint="@color/lightBlue"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/fldEditTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:hint="@string/editTanggal"
+                android:textColorHint="@color/lightBlue"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/fldEditKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:hint="@string/editKelamin"
+                android:textColorHint="@color/lightBlue"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/fldEditBB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:hint="@string/editBB"
+                android:textColorHint="@color/lightBlue"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/fldEditTB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:hint="@string/editTB"
+                android:textColorHint="@color/lightBlue"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/editUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:hint="@string/username"
+                android:textColorHint="@color/lightBlue"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:hint="@string/password"
+                android:textColorHint="@color/lightBlue"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/orange"
+                android:text="@string/registerBtn"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Sudah Memiliki akun?"
+                android:textColor="@color/lightBlue"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="103dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/orange"
+                android:text="@string/loginBtn"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
